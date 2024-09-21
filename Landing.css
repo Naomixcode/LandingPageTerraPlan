@@ -1,0 +1,179 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/FONDO.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(74, 28, 28);
+}
+
+/* Header styles */
+header {
+    background: rgba(101, 220, 157, 0.8);
+    color: #5e3636;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+.inicio-link a {
+    color: white;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.inicio-link a:hover {
+    color: #ffff00;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+}
+
+/* Container for the logo and content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Typewriter effect */
+.typewriter {
+    text-align: center;
+    color: #601926;
+    font-size: 3vw;
+    margin-bottom: 10px;
+    margin-top: -200px;
+    font-weight: bold;
+    height: 1.5em;
+    white-space: nowrap;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#logo {
+    width: 40vw;
+}
+
+.logo-text {
+    width: 100%;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.5vw;
+}
+
+/* Conoce más section */
+.conoce-mas__header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.conoce-mas__title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.conoce-mas__subtitle {
+    font-size: 1.5rem;
+}
+
+.conoce-mas__content {
+    text-align: center;
+}
+
+.conoce-mas__button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #34c345;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Benefits section */
+.nuestros-beneficios__header, .testimonios__header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nuestros-beneficios__title, .testimonios__title {
+    font-size: 2rem;
+}
+
+.nuestros-beneficios__subtitle, .testimonios__subtitle {
+    font-size: 1.5rem;
+}
+
+.nuestros-beneficios__content, .testimonios__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nuestros-beneficios__content article, .testimonios__content article {
+    background-color: rgba(68, 205, 75, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Testimonies */
+.testimonios__comment {
+    font-style: italic;
+}
+
+/* Footer styles */
+footer {
+    background: rgba(3, 18, 7, 0.8);
+    color: #a94444;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .typewriter {
+        font-size: 5vw;
+        margin-top: -150px;
+    }
+
+    #logo {
+        width: 40vw;
+    }
+
+    .logo-text {
+        font-size: 3vw;
+    }
+
+    .conoce-mas__title, .nuestros-beneficios__title, .testimonios__title {
+        font-size: 1.5rem;
+    }
+
+    .conoce-mas__subtitle, .nuestros-beneficios__subtitle, .testimonios__subtitle {
+        font-size: 1.2rem;
+    }
+
+    .nuestros-beneficios__content article, .testimonios__content article {
+        max-width: 100%;
+    }
+}
